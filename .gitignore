@@ -1,0 +1,6 @@
+*
+!.gitignore
+!README.md
+!SECURITY.md
+!latest.json
+!latest.json.sig
