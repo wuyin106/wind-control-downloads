@@ -10,15 +10,15 @@
 
 ## 当前发布
 
-`v0.8.0-beta0.0.7` 是 Windows prerelease Photo 后 TikTok 编辑页连接恢复修复版。附件包括 Windows ZIP、ZIP 的 SHA-256、复用且已验证的 `WindControl-Bootstrap-Generic-0.4.39.ipa`、IPA 校验文件和 0.4.39 资源元数据。
+`v0.8.0-beta0.0.8` 是 Windows prerelease 连接诊断日志降噪修复版。附件包括 Windows ZIP、ZIP 的 SHA-256、复用且已验证的 `WindControl-Bootstrap-Generic-0.4.39.ipa`、IPA 校验文件和 0.4.39 资源元数据。
 
-- Windows ZIP：`wind-control-Windows-v0.8.0-beta0.0.7-win10-x64.zip`
-- Windows ZIP 大小：27,298,936 bytes
-- Windows ZIP SHA-256：`9eb44b6494e57e69933c2e9200facfc8adc484f032ad100c382df42b6cb8d13d`
+- Windows ZIP：`wind-control-Windows-v0.8.0-beta0.0.8-win10-x64.zip`
+- Windows ZIP 大小：27,298,817 bytes
+- Windows ZIP SHA-256：`58cc2bf82a551e2ce97fc665c56c5a36add03c0e8f8453c62eaf8b205c856550`
 - Agent：`0.4.39`；Bootstrap：`1.4.39` / build `4039`
 - schema 7 / atomicUITap=true
-- Release：https://github.com/wuyin106/wind-control-downloads/releases/tag/v0.8.0-beta0.0.7
+- Release：https://github.com/wuyin106/wind-control-downloads/releases/tag/v0.8.0-beta0.0.8
 - 自动更新清单：https://raw.githubusercontent.com/wuyin106/wind-control-downloads/main/latest.json
 - 自动更新签名：https://raw.githubusercontent.com/wuyin106/wind-control-downloads/main/latest.json.sig
 
-这是测试版自动更新清单，不代表 Windows 真机首次安装、运行、升级或 Photo 后切换 TikTok 的连接恢复验收已完成；客户端仍须验证 Ed25519 签名、HTTPS、大小和 SHA-256，并由用户确认后才安装。旧 beta1、beta2、beta0.0.3、beta0.0.4、beta0.0.5 和 beta0.0.6 Release 保留不变。
+本次修复只让连续变化的 heartbeat/disconnect age 作为连接事件的附带字段，不再单独刷日志；离散连接状态、重连计数、会话/Agent 摘要和清洗后的断开原因仍会记录。这是测试版自动更新清单，不代表 Windows 真机首次安装、运行、升级或 Photo 后切换 TikTok 的连接恢复验收已完成；客户端仍须验证 Ed25519 签名、HTTPS、大小和 SHA-256，并由用户确认后才安装。旧 beta1、beta2、beta0.0.3、beta0.0.4、beta0.0.5、beta0.0.6 和 beta0.0.7 Release 保留不变。
