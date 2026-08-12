@@ -10,14 +10,15 @@
 
 ## 当前发布
 
-`v0.8.0-beta0.0.6` 是 prerelease 文件夹进入判定修复版。附件包括 Windows ZIP、ZIP 的 SHA-256、复用且已验证的 `WindControl-Bootstrap-Generic-0.4.39.ipa`、IPA 校验文件和 0.4.39 资源元数据。
+`v0.8.0-beta0.0.7` 是 Windows prerelease Photo 后 TikTok 编辑页连接恢复修复版。附件包括 Windows ZIP、ZIP 的 SHA-256、复用且已验证的 `WindControl-Bootstrap-Generic-0.4.39.ipa`、IPA 校验文件和 0.4.39 资源元数据。
 
-- Windows ZIP：`wind-control-Windows-v0.8.0-beta0.0.6-win10-x64.zip`
-- Windows ZIP 大小：27,291,854 bytes
-- Windows ZIP SHA-256：`f0808e1c09990ffd20a5062c32aa66ba87a689d4bc05190c8bb03a5574b7766c`
+- Windows ZIP：`wind-control-Windows-v0.8.0-beta0.0.7-win10-x64.zip`
+- Windows ZIP 大小：27,298,936 bytes
+- Windows ZIP SHA-256：`9eb44b6494e57e69933c2e9200facfc8adc484f032ad100c382df42b6cb8d13d`
 - Agent：`0.4.39`；Bootstrap：`1.4.39` / build `4039`
-- Release：https://github.com/wuyin106/wind-control-downloads/releases/tag/v0.8.0-beta0.0.6
+- schema 7 / atomicUITap=true
+- Release：https://github.com/wuyin106/wind-control-downloads/releases/tag/v0.8.0-beta0.0.7
 - 自动更新清单：https://raw.githubusercontent.com/wuyin106/wind-control-downloads/main/latest.json
 - 自动更新签名：https://raw.githubusercontent.com/wuyin106/wind-control-downloads/main/latest.json.sig
 
-这是测试版自动更新清单，不代表 Windows 真机首次安装、运行和升级验收已完成；客户端仍须验证 Ed25519 签名、HTTPS、大小和 SHA-256，并由用户确认后才安装。
+这是测试版自动更新清单，不代表 Windows 真机首次安装、运行、升级或 Photo 后切换 TikTok 的连接恢复验收已完成；客户端仍须验证 Ed25519 签名、HTTPS、大小和 SHA-256，并由用户确认后才安装。旧 beta1、beta2、beta0.0.3、beta0.0.4、beta0.0.5 和 beta0.0.6 Release 保留不变。
