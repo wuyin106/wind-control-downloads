@@ -10,17 +10,14 @@
 
 ## 当前发布
 
-`v0.8.0-beta0.0.5` 是 prerelease。附件包括 Windows ZIP、ZIP 的 SHA-256、
-经过 attest 的 `WindControl-Bootstrap-Generic-0.4.39.ipa`、IPA 校验文件和
-0.4.39 资源元数据。
+ 是 prerelease 文件夹进入判定修复版。附件包括 Windows ZIP、ZIP 的 SHA-256、复用且已验证的 、IPA 校验文件和 0.4.39 资源元数据。
 
-- Windows ZIP：`wind-control-Windows-v0.8.0-beta0.0.5-win10-x64.zip`
-- Windows ZIP 大小：27,290,822 bytes
-- Windows ZIP SHA-256：`4d398d1eb8676876c49c62ba0de294b6995849b8e41ff925e7549524ae1b091d`
-- Agent：`0.4.39`；Bootstrap：`1.4.39` / build `4039`
-- Release：https://github.com/wuyin106/wind-control-downloads/releases/tag/v0.8.0-beta0.0.5
+- Windows ZIP：
+- Windows ZIP 大小：27,291,854 bytes
+- Windows ZIP SHA-256：
+- Agent：；Bootstrap： / build 
+- Release：https://github.com/wuyin106/wind-control-downloads/releases/tag/v0.8.0-beta0.0.6
 - 自动更新清单：https://raw.githubusercontent.com/wuyin106/wind-control-downloads/main/latest.json
 - 自动更新签名：https://raw.githubusercontent.com/wuyin106/wind-control-downloads/main/latest.json.sig
 
-这是测试版自动更新清单，不代表 Windows 真机首次安装、运行和升级验收已完成；
-客户端仍须验证 Ed25519 签名、HTTPS、大小和 SHA-256，并由用户确认后才安装。
+这是测试版自动更新清单，不代表 Windows 真机首次安装、运行和升级验收已完成；客户端仍须验证 Ed25519 签名、HTTPS、大小和 SHA-256，并由用户确认后才安装。
