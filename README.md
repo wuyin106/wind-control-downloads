@@ -10,16 +10,18 @@
 
 ## 当前发布
 
-`v0.8.0-beta0.0.10` 是 Windows prerelease，修复 Files 清理 exact folder/ZIP 逐项选择确认：选择模式不再错误要求不存在的 Downloads 标题或图片 Select All 契约，而是绑定原始 Files 行集合签名，并兼容 Select All/Deselect All 两种真实状态；身份、顺序、几何或控件证据歧义时 fail closed，不重复点击目标或 Delete。
+`v0.8.0-beta0.0.11` 是 Windows prerelease，来自私有 main `975438a54ab990e63e15b35d914bce22b6b98938`。本版本包含 TikTok 音乐候选延迟加载/过渡树处理和手机安装器正式 bundle identity 修复；Windows 构建来自 Actions run `31590742287`，手机安装器来自 run `31590391308`。
 
-- Windows ZIP：`wind-control-Windows-v0.8.0-beta0.0.10-win10-x64.zip`
-- Windows ZIP 大小：27,299,818 bytes
-- Windows ZIP SHA-256：`78d0f6d0eb47e02fcfb59561294c8014b96dab80985163d2bb440cce97e23537`
-- Agent：`0.4.39`；Bootstrap：`1.4.39` / build `4039`
+- Windows ZIP：`wind-control-Windows-v0.8.0-beta0.0.11-win10-x64.zip`
+- Windows ZIP 大小：27,307,005 bytes
+- Windows ZIP SHA-256：`15031f7bbf038b207f03d5f4552f5b1377d703eb54f3b6223a841356578e1446`
+- 手机 IPA：`WindControl-Bootstrap-Generic-0.4.39.ipa`
+- 手机 IPA 大小：4,355,858 bytes
+- 手机 IPA SHA-256：`11a2a0e029961a26d24edcf7dc83b6e36c44339354af02662ba17b6b06b11c6c`
+- Agent：`0.4.39`；Bootstrap：`1.4.40` / build `4040`
 - schema 7 / atomicUITap=true
-- 资源元数据：`windows-bootstrap-resource.json`
-- Release：https://github.com/wuyin106/wind-control-downloads/releases/tag/v0.8.0-beta0.0.10
+- Release：https://github.com/wuyin106/wind-control-downloads/releases/tag/v0.8.0-beta0.0.11
 - 自动更新清单：https://raw.githubusercontent.com/wuyin106/wind-control-downloads/main/latest.json
 - 自动更新签名：https://raw.githubusercontent.com/wuyin106/wind-control-downloads/main/latest.json.sig
 
-本 Release 为 prerelease，不代表 Windows 真机首次安装、运行、升级或 Files 清理流程验收已完成；客户端仍须验证 Ed25519 签名、HTTPS、大小和 SHA-256，并由用户确认后才安装。旧 beta1、beta2、beta0.0.3 至 beta0.0.9 Release 保留不变。
+本 Release 为 prerelease，不代表 Windows 真机首次安装、运行、升级或 TikTok/Files 全流程验收已完成；客户端仍须验证 Ed25519 签名、HTTPS、大小和 SHA-256，并由用户确认后才安装。旧 beta1、beta2、beta0.0.3 至 beta0.0.10 Release 保留不变。
