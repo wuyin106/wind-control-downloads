@@ -10,15 +10,16 @@
 
 ## 当前发布
 
-`v0.8.0-beta0.0.9` 是 Windows prerelease Files 清理 exact pair 选择确认修复版。清理时逐项选择同名文件夹和 ZIP，独立验证 `2 Items`、两个 exact 类型匹配项和唯一 Delete，不再错误要求图片 Select All 的 Deselect All/Share。附件包括 Windows ZIP、ZIP 的 SHA-256、复用且已验证的 `WindControl-Bootstrap-Generic-0.4.39.ipa`、IPA 校验文件和 0.4.39 资源元数据。
+`v0.8.0-beta0.0.10` 是 Windows prerelease，修复 Files 清理 exact folder/ZIP 逐项选择确认：选择模式不再错误要求不存在的 Downloads 标题或图片 Select All 契约，而是绑定原始 Files 行集合签名，并兼容 Select All/Deselect All 两种真实状态；身份、顺序、几何或控件证据歧义时 fail closed，不重复点击目标或 Delete。
 
-- Windows ZIP：`wind-control-Windows-v0.8.0-beta0.0.9-win10-x64.zip`
-- Windows ZIP 大小：27,301,471 bytes
-- Windows ZIP SHA-256：`6a33e22f949a5b557fb346959cdbb79a4b5caaa1b8fff6a54272cbd2ccdc1c7e`
+- Windows ZIP：`wind-control-Windows-v0.8.0-beta0.0.10-win10-x64.zip`
+- Windows ZIP 大小：27,299,818 bytes
+- Windows ZIP SHA-256：`78d0f6d0eb47e02fcfb59561294c8014b96dab80985163d2bb440cce97e23537`
 - Agent：`0.4.39`；Bootstrap：`1.4.39` / build `4039`
 - schema 7 / atomicUITap=true
-- Release：https://github.com/wuyin106/wind-control-downloads/releases/tag/v0.8.0-beta0.0.9
+- 资源元数据：`windows-bootstrap-resource.json`
+- Release：https://github.com/wuyin106/wind-control-downloads/releases/tag/v0.8.0-beta0.0.10
 - 自动更新清单：https://raw.githubusercontent.com/wuyin106/wind-control-downloads/main/latest.json
 - 自动更新签名：https://raw.githubusercontent.com/wuyin106/wind-control-downloads/main/latest.json.sig
 
-本 Release 为 prerelease，不代表 Windows 真机首次安装、运行、升级或 Files 清理流程验收已完成；客户端仍须验证 Ed25519 签名、HTTPS、大小和 SHA-256，并由用户确认后才安装。旧 beta1、beta2、beta0.0.3 至 beta0.0.8 Release 保留不变。
+本 Release 为 prerelease，不代表 Windows 真机首次安装、运行、升级或 Files 清理流程验收已完成；客户端仍须验证 Ed25519 签名、HTTPS、大小和 SHA-256，并由用户确认后才安装。旧 beta1、beta2、beta0.0.3 至 beta0.0.9 Release 保留不变。
