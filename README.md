@@ -10,18 +10,18 @@
 
 ## 当前发布
 
-`v0.8.0-beta0.0.11` 是 Windows prerelease，来自私有 main `975438a54ab990e63e15b35d914bce22b6b98938`。本版本包含 TikTok 音乐候选延迟加载/过渡树处理和手机安装器正式 bundle identity 修复；Windows 构建来自 Actions run `31590742287`，手机安装器来自 run `31590391308`。
+`v0.8.0-beta0.0.14` 是 Windows prerelease，来自私有 main `62d458e35a550db8d75f89cc89303717802391a1`。本版本修复了 TikTok 编辑页同一健康会话中的瞬时 UI 快照异常处理，并保留真实断线的独立重连门禁；Windows 构建来自 Actions run `31660673991`，手机安装器来自 run `31660472364`。
 
-- Windows ZIP：`wind-control-Windows-v0.8.0-beta0.0.11-win10-x64.zip`
-- Windows ZIP 大小：27,307,005 bytes
-- Windows ZIP SHA-256：`15031f7bbf038b207f03d5f4552f5b1377d703eb54f3b6223a841356578e1446`
-- 手机 IPA：`WindControl-Bootstrap-Generic-0.4.39.ipa`
-- 手机 IPA 大小：4,355,858 bytes
-- 手机 IPA SHA-256：`11a2a0e029961a26d24edcf7dc83b6e36c44339354af02662ba17b6b06b11c6c`
-- Agent：`0.4.39`；Bootstrap：`1.4.40` / build `4040`
+- Windows ZIP：`wind-control-Windows-v0.8.0-beta0.0.14-win10-x64.zip`
+- Windows ZIP 大小：31,675,786 bytes
+- Windows ZIP SHA-256：`d607baf37df34076c11849b40f8b4d3c96d7ed12380553dc6408b5953cad7e9a`
+- 手机 IPA：`WindControl-Bootstrap-Generic-0.4.42.ipa`
+- 手机 IPA 大小：4,357,301 bytes
+- 手机 IPA SHA-256：`63ff516cd003ace24ce3afe3fac309be443b1d092522118d7553229a7b2c93e2`
+- Agent：`0.4.42`；Bootstrap：`1.4.43` / build `4043`
 - schema 7 / atomicUITap=true
-- Release：https://github.com/wuyin106/wind-control-downloads/releases/tag/v0.8.0-beta0.0.11
+- Release：https://github.com/wuyin106/wind-control-downloads/releases/tag/v0.8.0-beta0.0.14
 - 自动更新清单：https://raw.githubusercontent.com/wuyin106/wind-control-downloads/main/latest.json
 - 自动更新签名：https://raw.githubusercontent.com/wuyin106/wind-control-downloads/main/latest.json.sig
 
-本 Release 为 prerelease，不代表 Windows 真机首次安装、运行、升级或 TikTok/Files 全流程验收已完成；客户端仍须验证 Ed25519 签名、HTTPS、大小和 SHA-256，并由用户确认后才安装。旧 beta1、beta2、beta0.0.3 至 beta0.0.10 Release 保留不变。
+本 Release 为 prerelease，不代表 Windows 真机首次安装、运行、升级或 TikTok/Files 全流程验收已完成；客户端仍须验证 Ed25519 签名、HTTPS、大小和 SHA-256，并由用户确认后才安装。旧 beta1、beta2、beta0.0.3 至 beta0.0.13 Release 保留不变。
