@@ -10,18 +10,18 @@
 
 ## 当前发布
 
-`v0.8.0-beta0.0.14` 是 Windows prerelease，来自私有 main `62d458e35a550db8d75f89cc89303717802391a1`。本版本修复了 TikTok 编辑页同一健康会话中的瞬时 UI 快照异常处理，并保留真实断线的独立重连门禁；Windows 构建来自 Actions run `31660673991`，手机安装器来自 run `31660472364`。
+`v0.8.0-beta0.0.15` 是 Windows prerelease，来自私有 main `b517737d4384b792f24e444081bf230fb8bb731a`。本版本修复了持久控制会话在初始/后续电源续租期间被阻塞或误断开的问题，并统一要求新鲜 heartbeat 才显示“可控制”；同时保留 Photo 后同一健康会话内瞬时 UI 快照重试和真实断线的独立重连门禁。Windows 构建来自 Actions run `31664246078`，手机安装器来自 run `31664060552`。
 
-- Windows ZIP：`wind-control-Windows-v0.8.0-beta0.0.14-win10-x64.zip`
-- Windows ZIP 大小：31,675,786 bytes
-- Windows ZIP SHA-256：`d607baf37df34076c11849b40f8b4d3c96d7ed12380553dc6408b5953cad7e9a`
-- 手机 IPA：`WindControl-Bootstrap-Generic-0.4.42.ipa`
-- 手机 IPA 大小：4,357,301 bytes
-- 手机 IPA SHA-256：`63ff516cd003ace24ce3afe3fac309be443b1d092522118d7553229a7b2c93e2`
-- Agent：`0.4.42`；Bootstrap：`1.4.43` / build `4043`
+- Windows ZIP：`wind-control-Windows-v0.8.0-beta0.0.15-win10-x64.zip`
+- Windows ZIP 大小：31,684,495 bytes
+- Windows ZIP SHA-256：`84cc7f9e605967e26d2cda19bde09e748c5e74a06c606d8f3e5e5e30131d518f`
+- 手机 IPA：`WindControl-Bootstrap-Generic-0.4.43.ipa`
+- 手机 IPA 大小：4,363,724 bytes
+- 手机 IPA SHA-256：`de0f43fcf05a53856f26041d780bcc443a5e6564a1a6f0488c5c0d7bbe6de094`
+- Agent：`0.4.43`；Bootstrap：`1.4.44` / build `4044`
 - schema 7 / atomicUITap=true
-- Release：https://github.com/wuyin106/wind-control-downloads/releases/tag/v0.8.0-beta0.0.14
+- Release：https://github.com/wuyin106/wind-control-downloads/releases/tag/v0.8.0-beta0.0.15
 - 自动更新清单：https://raw.githubusercontent.com/wuyin106/wind-control-downloads/main/latest.json
 - 自动更新签名：https://raw.githubusercontent.com/wuyin106/wind-control-downloads/main/latest.json.sig
 
-本 Release 为 prerelease，不代表 Windows 真机首次安装、运行、升级或 TikTok/Files 全流程验收已完成；客户端仍须验证 Ed25519 签名、HTTPS、大小和 SHA-256，并由用户确认后才安装。旧 beta1、beta2、beta0.0.3 至 beta0.0.13 Release 保留不变。
+本 Release 为 prerelease，不代表 Windows 真机首次安装、运行、升级或 TikTok/Files 全流程验收已完成；客户端仍须验证 Ed25519 签名、HTTPS、大小和 SHA-256，并由用户确认后才安装。旧 beta1、beta2、beta0.0.3 至 beta0.0.14 Release 保留不变。
