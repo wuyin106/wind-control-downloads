@@ -1,0 +1,71 @@
+name: Build private WindControl mobile staging
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-mobile:
+    name: iOS 15 private mobile staging
+    runs-on: macos-14
+    timeout-minutes: 45
+    env:
+      PYTHONUTF8: "1"
+      SOURCE_SHA: "2c02d829dbd9dc64d80ca208b626cc0ba1885be2"
+
+    steps:
+      - name: Check out private source commit
+        uses: actions/checkout@v4
+        with:
+          repository: wuyin106/wind-control-core
+          ref: 2c02d829dbd9dc64d80ca208b626cc0ba1885be2
+          token: ${{ secrets.WIND_CONTROL_BUILD_TOKEN }}
+          persist-credentials: false
+          path: source
+
+      - name: Install macOS build dependencies
+        run: |
+          brew install python-tk@3.14
+          brew install ldid
+          python3 -c 'import tkinter; print(f"Tk {tkinter.TkVersion}")'
+
+      - name: Install declared Python dependencies
+        working-directory: source
+        run: |
+          python3 -m venv "$RUNNER_TEMP/wind-python"
+          "$RUNNER_TEMP/wind-python/bin/python" -m pip install -r windows/requirements.txt
+          echo "$RUNNER_TEMP/wind-python/bin" >> "$GITHUB_PATH"
+          echo "VIRTUAL_ENV=$RUNNER_TEMP/wind-python" >> "$GITHUB_ENV"
+
+      - name: Run shared contract tests
+        working-directory: source
+        run: |
+          export WIND_CONTROL_STATE_DIR="$RUNNER_TEMP/wind-control-state"
+          python3 -m unittest discover -s tests -v
+
+      - name: Build and attest generic installer
+        working-directory: source
+        run: |
+          export WIND_CONTROL_STATE_DIR="$RUNNER_TEMP/wind-control-state"
+          python3 scripts/build_windows_bootstrap_release.py \
+            --output-dir "$RUNNER_TEMP/wind-mobile-installer"
+
+      - name: Publish private source-repository staging release
+        working-directory: source
+        env:
+          GH_TOKEN: ${{ secrets.WIND_CONTROL_BUILD_TOKEN }}
+        run: |
+          VERSION=$(PYTHONPATH=windows python3 -c 'from windcontrol import __version__; print(__version__)')
+          python3 scripts/publish_build_staging.py \
+            --output-dir "$RUNNER_TEMP/wind-mobile-installer" \
+            --kind mobile \
+            --version "$VERSION" \
+            --repo "wuyin106/wind-control-core" \
+            --tag "build-staging-mobile-${SOURCE_SHA}-${GITHUB_RUN_ID}" \
+            --title "Private mobile build staging ${SOURCE_SHA} / run ${GITHUB_RUN_ID}" \
+            --source-commit "$SOURCE_SHA" \
+            --run-id "$GITHUB_RUN_ID" \
+            --run-attempt "$GITHUB_RUN_ATTEMPT" \
+            --workflow "$GITHUB_WORKFLOW"
